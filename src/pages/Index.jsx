@@ -61,7 +61,8 @@ function Index() {
                       <center>
                           
                           <GoogleLogin
-                              clientId='789011637624-7i7mvke7ke6rer0pc7e7f8dgha94igno.apps.googleusercontent.com'                                        
+                          
+                              clientId='736252781349-qn9ut5t77lbfspjqc67su3q9gkqiibgh.apps.googleusercontent.com'                                        
                                 buttonText = "Acceder con Google"
                                 //render={renderProps => (
                                   //<button onClick={renderProps.onClick} disabled={renderProps.disabled}>Acceder con Google</button>
