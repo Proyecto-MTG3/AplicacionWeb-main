@@ -39,7 +39,7 @@ const Navbar = () => {
                         <Link className="dropdown-item" to="/admin/MaestroProductos"><h6>Mestro Productos</h6></Link>
                         <Link className="dropdown-item" to="/admin/MaestroUsuario"><h6>Maestro Usuario</h6></Link>
 
-                        <Link className="dropdown-item" to="close" >Salir</Link>
+                        <Link className="dropdown-item" to="/" >Salir</Link>
                     </ul>
                 </li>
             </div> 
