@@ -16,7 +16,7 @@ function Register() {
     const registrar=async(e)=>{
         e.preventDefault()
         const NuevoRegistro={email,password,confirmar}
-        const respuesta=await Axios.post('http://localhost:3000/api',NuevoRegistro)
+        const respuesta=await Axios.post('https://calm-spire-88502.herokuapp.com/api',NuevoRegistro)
         const mensaje=respuesta.data.mensaje
         alert(mensaje)
     }
