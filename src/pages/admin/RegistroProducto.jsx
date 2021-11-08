@@ -24,7 +24,7 @@ const RegistroProducto = () => {
   
     const add_product_db = () => {
       console.log(idProduct_add + description_add + unit_cost_add + state_add)
-      Axios.post('http://localhost:3001/api/v1/product/add',{
+      Axios.post('https://calm-spire-88502.herokuapp.com1/api/v1/product/add',{
         idProduct: idProduct_add,
         description: description_add,
         unit_cost: unit_cost_add,
