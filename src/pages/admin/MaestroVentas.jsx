@@ -35,7 +35,7 @@ const MaestroVentas = () => {
     const [sales, set_sales] = useState([])
 
     useEffect(() => {
-        Axios.get('https://damp-everglades-84497.herokuapp.com//api/v1/sales/list').then((res) => {
+        Axios.get('https://damp-everglades-84497.herokuapp.com/api/v1/sales/list').then((res) => {
             console.log(res.data.sales)
             set_sales(res.data.sales)
         });
