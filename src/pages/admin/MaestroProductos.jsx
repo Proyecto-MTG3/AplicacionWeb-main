@@ -25,7 +25,7 @@ function MaestroProductos() {
     const [products, set_products] = useState([])
 
     useEffect(() => {
-        Axios.get('https://mtg3.herokuapp.com/api/v1/product/list').then((res) => {
+        Axios.get('https://damp-everglades-84497.herokuapp.com/api/v1/product/list').then((res) => {
             console.log(res.data.products)
             set_products(res.data.products)
         });
@@ -34,12 +34,12 @@ function MaestroProductos() {
 
 
     const delete_product = (_id) => {
-        Axios.delete('https://mtg3.herokuapp.com/api/v1/product/delete/' + _id)
+        Axios.delete('https://damp-everglades-84497.herokuapp.com/api/v1/product/delete/' + _id)
         toast.warn('Eliminado')
     }
 
     const update_product = (_id) => {
-        Axios.put('https://mtg3.herokuapp.com/api/v1/product/update', {
+        Axios.put('https://damp-everglades-84497.herokuapp.com/api/v1/product/update', {
             _id: _id,
             idProduct: idProduct_update,
             description: description_update,
